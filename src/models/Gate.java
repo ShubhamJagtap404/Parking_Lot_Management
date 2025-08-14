@@ -5,6 +5,15 @@ public class Gate extends BaseModel{
     private Operator operator;
     private GateType gateType;
     private GateStatus gateStatus;
+    private ParkingLot parkingLot; // this will be mapped to obj based on id present in gate table in db
+
+    public ParkingLot getParkingLot() {
+        return parkingLot;
+    }
+
+    public void setParkingLot(ParkingLot parkingLot) {
+        this.parkingLot = parkingLot;
+    }
 
     public int getGateNumber() {
         return gateNumber;
